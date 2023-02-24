@@ -41,5 +41,18 @@ namespace LinkedListDataStructure
                 temp = temp.next;
             }
         }
+        public void ReversOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if(this.head == null)
+                this.head = newNode;
+            else
+            {
+                Node tempNode = this.head;
+                head = newNode;
+                head.next = tempNode;
+            }
+            Console.WriteLine(newNode.data + " Is inserted into LinkedList.");
+        }
     }
 }
