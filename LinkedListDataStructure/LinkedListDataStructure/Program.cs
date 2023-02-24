@@ -11,8 +11,8 @@ namespace LinkedListDataStructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nPlease Select An Option : "+"\n1.Add Data Into LiknkedList\n"+"2.Display Linked List"+"\n3.Add Data By Reverse Order Into LinkedList"
-                    +"\n4.Appending Data Into LinkedList"+"\n5.Remove First Node From LinkedList"+"\n6.Remove Last Node From LinkedList"+"\n7.Exit");
+                Console.WriteLine("\nPlease Select An Option : "+"\n1.Add Data Into LiknkedList\n"+"2.Display Linked List" + "\n3.Add Data By Reverse Order Into LinkedList"
+                    + "\n4.Appending Data Into LinkedList" +"\n6.Remove First Node From LinkedList");
                 int option =Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine(" ");
                 switch (option)
@@ -37,18 +37,11 @@ namespace LinkedListDataStructure
                         list.Append(70);
                         list.Display();
                         break;
-                    case 5:
-                        list.Add(56);
-                        list.Add(30);
-                        list.Add(70);
-                        list.RemoveFirstNode();
-                        list.Display();
-                        break;
                     case 6:
                         list.Add(56);
                         list.Add(30);
                         list.Add(70);
-                        list.RemoveLastNode();
+                        list.RemoveFirstNode();
                         list.Display();
                         break;
                     case 7:
