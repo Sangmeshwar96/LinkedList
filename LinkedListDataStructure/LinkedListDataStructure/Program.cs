@@ -13,7 +13,8 @@ namespace LinkedListDataStructure
             while (flag)
             {
                 Console.WriteLine("\nPlease Select An Option : "+"\n1.Add Data Into LiknkedList\n"+"2.Display Linked List" + "\n3.Add Data By Reverse Order Into LinkedList"
-                    + "\n4.Appending Data Into LinkedList" +"\n6.Remove First Node From LinkedList" + "\n7.Remove Last Node From LinkedList" +"\n8.Size Of LinkedList"+"\n9.Stack Push Data"+ "\n10.Exit");
+                    + "\n4.Appending Data Into LinkedList" +"\n6.Remove First Node From LinkedList" + "\n7.Remove Last Node From LinkedList" +"\n8.Size Of LinkedList"+"\n9.Stack Push Data" +"\n10.Stack Pop Data"
+                + "\n11.Exit");
                 int option =Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine(" ");
                 switch (option)
@@ -64,13 +65,21 @@ namespace LinkedListDataStructure
                         break;
                     case 9:
                         stack.Push(56);
-                        stack.Push(56);
-                        stack.Push(56);
+                        stack.Push(30);
+                        stack.Push(70);
                         Console.WriteLine(" ");
                         stack.Display();
                         Console.WriteLine(" ");
                         break;
                     case 10:
+                        stack.Push(56);
+                        stack.Push(30);
+                        stack.Push(70);
+                        Console.WriteLine(" ");
+                        stack.Display();
+                        stack.IsEmpty();
+                        break;
+                    case 11:
                         Console.WriteLine("Thank you !!!");
                         flag = false;
                         break;

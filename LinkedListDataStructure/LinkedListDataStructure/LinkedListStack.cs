@@ -14,7 +14,7 @@ namespace LinkedListDataStructure
             this.top = null;
         }
 
-        internal void Push(int value)
+        public void Push(int value)
         {
             Node node = new Node(value);
             if (this.top == null)
@@ -29,7 +29,7 @@ namespace LinkedListDataStructure
             Console.WriteLine(value + " pushed to stack");
         }
 
-        internal void Display()
+        public void Display()
         {
             Node temp = this.top;
             if (temp == null)
@@ -40,6 +40,38 @@ namespace LinkedListDataStructure
             {
                 Console.Write(temp.data + " ");
                 temp = temp.next;
+            }
+        }
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("\nStack is Empty");
+                return;
+            }
+            Console.WriteLine("\n"+ this.top.data + " is in top of stack");
+        }
+
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty,Deletion is not Possible");
+                return;
+            }
+            Console.WriteLine("Value Popped is "+ this.top.data);
+            this.top = this.top.next;
+        }
+
+        public void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Console.WriteLine(" ");
+                Peek();
+                Pop();
+                Console.WriteLine(" ");
+                Display();
             }
         }
     }
