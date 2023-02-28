@@ -40,6 +40,7 @@ namespace LinkedListDataStructure
                 Console.Write(temp.data + " \n");
                 temp = temp.next;
             }
+            Console.WriteLine("\n ______________________________________________________________________");
         }
         public void ReversOrder(int data)
         {
@@ -120,7 +121,7 @@ namespace LinkedListDataStructure
                 }
                 if(doesExists)
                 {
-                    Console.WriteLine(value+"exists"+count+"times.");
+                    Console.WriteLine(value+" exists "+count+" times.\n");
                 }
                 else
                 {
