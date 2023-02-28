@@ -109,6 +109,15 @@ namespace LinkedListDataStructure
                         queue.Enqueue(30);
                         queue.Display();
                         break;
+                    case 13:
+                        queue.Enqueue(10);
+                        queue.Enqueue(20);
+                        queue.Enqueue(30);
+                        Console.WriteLine("\nThe Queue Before Dequeue.");
+                        queue.Display();
+                        Console.WriteLine("\nThe Queue After Dequeue.");
+                        queue.Dequeue();
+                        break;
                     case 14:
                         Console.WriteLine("Thank you !!!");
                         flag = false;
