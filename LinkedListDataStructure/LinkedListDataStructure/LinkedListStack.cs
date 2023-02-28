@@ -8,7 +8,7 @@ namespace LinkedListDataStructure
 {
     public class LinkedListStack
     {
-        private Node top;
+        public Node top;
         public LinkedListStack()
         {
             this.top = null;
